@@ -123,10 +123,15 @@ h3 {
     }
 }
 
-.text {
+.text,
+.description_text {
     color: #ddd;
     font-family: "Unispace";
     font-size: .8em;
+}
+
+.description_text {
+    font-size: .6em;
 }
 
 .flex_univers {
@@ -287,11 +292,10 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     position: relative;
     text-align: center;
     color: white;
-    background-color: #111;
 }
 
 .background-video {
@@ -306,7 +310,7 @@ body {
 }
 
 .img_profile {
-    width: 100vw;
+    width: 98vw;
     height: 10%;
     background-size: cover;
 }
@@ -384,6 +388,7 @@ body {
     font-family: "Unispace";
     text-align: justify;
     text-align: right;
+    padding-right: 30px;
     /* transform: translate(100%, 100%);
       padding-bottom: 20px;
       margin-left: 200px;*/
@@ -580,4 +585,54 @@ strike {
 
 #myproj {
     text-align: center;
+}
+
+.flex-col-projets {
+    width: 100vw;
+}
+
+
+.univers3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.projet_description {
+    background: rgba(255, 255, 255, 0.02);
+    margin-bottom: 10px;
+    padding-top: 18px;
+    padding-left: 18px;
+    padding-right: 18px;
+    width: 250px;
+    border: 2px solid rgba(255, 255, 255, 0.00);
+    text-align: center;
+    margin-right: 10px;
+}
+
+.projet_description:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.06);
+    border: 2px solid rgba(255, 255, 255, 0.03);
+}
+
+.projet_description h3 {
+    font-size: 1em;
+}
+
+.flexrow {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex_univers3 {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-right: 100px;
+    margin-left: 100px;
 }
